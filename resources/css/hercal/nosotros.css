@@ -1,0 +1,240 @@
+/* =====================================================
+   NOSOTROS — Calderas Hercal
+   ===================================================== */
+
+/* ══════════════════════════════════════════════════════
+   Banner
+   ══════════════════════════════════════════════════════ */
+
+.nosotros-banner {
+  position: relative;
+  width: 100%;
+  height: 403px;
+  overflow: hidden;
+  background: #800101;
+}
+
+/* Imagen */
+.nosotros-banner__img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  z-index: 0;
+}
+
+/* Video local */
+.nosotros-banner__video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  z-index: 0;
+}
+
+/* YouTube iframe */
+.nosotros-banner__iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.nosotros-banner__overlay {
+  position: absolute;
+  inset: 0;
+  background: transparent;
+  z-index: 1;
+}
+
+.nosotros-banner__content {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 1224px;
+  margin: 0 auto;
+  padding-top: 171px;
+  box-sizing: border-box;
+  padding-left: 32px;
+  padding-right: 32px;
+}
+
+.nosotros-banner__title {
+  margin: 0;
+  color: var(--Blanco, #FFF);
+  text-align: center;
+  font-family: "Mona Sans";
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 110%;
+}
+
+.nosotros-banner__breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-top: 15.5px;
+}
+
+.nosotros-banner__breadcrumb a {
+  color: var(--Blanco, #FFF);
+  text-align: right;
+  font-family: "Mona Sans";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 110%;
+  text-decoration: none;
+}
+
+.nosotros-banner__breadcrumb svg {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+}
+
+.nosotros-banner__breadcrumb span {
+  color: var(--Blanco, #FFF);
+  font-family: "Mona Sans";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 110%;
+}
+
+/* ══════════════════════════════════════════════════════
+   About (imagen + texto)
+   ══════════════════════════════════════════════════════ */
+
+.nosotros-about {
+  background: #FFF;
+  padding-top: 79px;
+  padding-bottom: 72px;
+}
+
+.nosotros-about__grid {
+  display: grid;
+  grid-template-columns: 600px 1fr;
+  gap: 24px;
+  align-items: start;
+}
+
+.nosotros-about__img-wrap {
+  width: 600px;
+  height: 579px;
+  border-radius: 10px;
+  overflow: hidden;
+  flex-shrink: 0;
+  background: lightgray 50% / cover no-repeat;
+}
+
+.nosotros-about__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+.nosotros-about__text {
+  padding-top: 77px;
+  padding-bottom: 80px;
+}
+
+.nosotros-about__title {
+  margin: 0;
+  width: 584px;
+  color: var(--bordo, #A00);
+  font-family: "Mona Sans";
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%;
+  letter-spacing: -0.8px;
+}
+
+.nosotros-about__desc {
+  margin: 0;
+  width: 100%;
+  color: #000;
+  font-family: "Mona Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+.nosotros-about__desc--first {
+  margin-top: 38px;
+}
+
+.nosotros-about__desc--rest {
+  margin-top: 24px;
+}
+
+/* ══════════════════════════════════════════════════════
+   Misión · Visión · Valores
+   ══════════════════════════════════════════════════════ */
+
+.nosotros-values {
+  background: #F5F5F5;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.nosotros-values__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 392px);
+  gap: 24px;
+  justify-content: center;
+}
+
+.nosotros-card {
+  width: 392px;
+  height: 362px;
+  transform: rotate(-0.143deg);
+  border-radius: 4px;
+  background: #FFF;
+  padding: 40.82px 24.03px 11px 24.33px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.nosotros-card__icon {
+  display: block;
+  line-height: 0;
+}
+
+.nosotros-card__title {
+  margin: 26.81px 0 0;
+  transform: rotate(-0.143deg);
+  color: #131313;
+  font-family: "Mona Sans";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.nosotros-card__text {
+  margin: 15.14px 0 0;
+  width: 344px;
+  transform: rotate(-0.143deg);
+  color: #0F0F0F;
+  font-family: "Mona Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}

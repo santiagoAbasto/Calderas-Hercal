@@ -1,0 +1,73 @@
+/* ── Mona Sans – declaración propia para matchear font-family: "Mona Sans" ── */
+@font-face {
+  font-family: 'Mona Sans';
+  font-style: normal;
+  font-weight: 300;
+  src:
+    local('Mona Sans Light'),
+    local('MonaSans-Light'),
+    local('Mona Sans'),
+    url('https://fonts.cdnfonts.com/s/91271/Mona-Sans-Light.woff') format('woff');
+  font-display: block;
+}
+@font-face {
+  font-family: 'Mona Sans';
+  font-style: normal;
+  font-weight: 400;
+  src:
+    local('Mona Sans Regular'),
+    local('MonaSans-Regular'),
+    local('Mona Sans'),
+    url('https://fonts.cdnfonts.com/s/91271/Mona-Sans-Regular.woff') format('woff');
+  font-display: block;
+}
+@font-face {
+  font-family: 'Mona Sans';
+  font-style: normal;
+  font-weight: 500;
+  src:
+    local('Mona Sans Medium'),
+    local('MonaSans-Medium'),
+    local('Mona Sans'),
+    url('https://fonts.cdnfonts.com/s/91271/Mona-Sans-Medium.woff') format('woff');
+  font-display: block;
+}
+@font-face {
+  font-family: 'Mona Sans';
+  font-style: normal;
+  font-weight: 600;
+  src:
+    local('Mona Sans SemiBold'),
+    local('MonaSans-SemiBold'),
+    local('Mona Sans'),
+    url('https://fonts.cdnfonts.com/s/91271/Mona-Sans-SemiBold.woff') format('woff');
+  font-display: block;
+}
+@font-face {
+  font-family: 'Mona Sans';
+  font-style: normal;
+  font-weight: 700;
+  src:
+    local('Mona Sans Bold'),
+    local('MonaSans-Bold'),
+    local('Mona Sans'),
+    url('https://fonts.cdnfonts.com/s/91271/Mona-Sans-Bold.woff') format('woff');
+  font-display: block;
+}
+@font-face {
+  font-family: 'Mona Sans';
+  font-style: normal;
+  font-weight: 800;
+  src:
+    local('Mona Sans ExtraBold'),
+    local('MonaSans-ExtraBold'),
+    local('Mona Sans'),
+    url('https://fonts.cdnfonts.com/s/91271/Mona-Sans-ExtraBold.woff') format('woff');
+  font-display: block;
+}
+
+:root {
+  --hc-shadow-soft: 0 4px 4px 0 rgba(0, 0, 0, 0.08);
+  --hc-footer-bg: #111827;
+  --hc-footer-text: rgba(255, 255, 255, 0.82);
+}

@@ -1,0 +1,16 @@
+.container {
+  width: min(calc(100% - 48px), var(--hc-content-width));
+  margin: 0 auto;
+}
+
+.hc-container {
+  width: min(calc(100% - 48px), var(--hc-content-width));
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .container,
+  .hc-container {
+    width: min(calc(100% - 32px), var(--hc-content-width));
+  }
+}

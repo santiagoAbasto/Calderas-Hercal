@@ -1,0 +1,46 @@
+/* BASE */
+
+@import "./base/reset.css";
+@import "./base/variables.css";
+
+@import "./hercal/variables.css";
+@import "./hercal/header.css";
+@import "./hercal/footer.css";
+@import "./hercal/home.css";
+@import "./hercal/nosotros.css";
+@import "./hercal/servicios.css";
+@import "./hercal/equipos.css";
+@import "./hercal/trabajos-realizados.css";
+@import "./hercal/normas.css";
+@import "./hercal/clientes.css";
+@import "./hercal/contacto.css";
+@import "./hercal/presupuesto.css";
+@import "./hercal/search.css";
+
+@import "./layout/container.css";
+@import "./sections/about.css";
+
+/* TOAST */
+
+@import "./layout/toast.css";
+
+@import "./layout/responsive.css";
+
+[class^="hc-"],
+[class*=" hc-"] {
+  -webkit-font-smoothing: initial;
+  -moz-osx-font-smoothing: auto;
+  text-rendering: auto;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
