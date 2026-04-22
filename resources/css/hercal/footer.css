@@ -10,7 +10,7 @@
 
 .hc-footer__inner {
   width: 100%;
-  max-width: 1366px;
+  max-width: none;
   height: 436px;
   margin: 0 auto;
   display: flex;
@@ -23,7 +23,9 @@
   grid-template-columns: minmax(0, 1fr) 372px 303px;
   column-gap: 72px;
   width: 100%;
+  max-width: 1366px;
   height: 376px;
+  margin: 0 auto;
   padding: 65px 69px 135px 71px;
   box-sizing: border-box;
   background: #FFF;
