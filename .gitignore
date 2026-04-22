@@ -39,3 +39,6 @@ Thumbs.db
 # Homestead
 Homestead.json
 Homestead.yaml
+
+test.xlsx
+test_excel.php
