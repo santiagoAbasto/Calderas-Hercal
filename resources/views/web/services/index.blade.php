@@ -4,10 +4,10 @@
 $banner = $page?->sections->where('section_key', 'servicios_banner')->first();
 $bannerMedia = $banner?->media?->where('is_active', true)->sortBy('updated_at')->last();
 $bannerMeta = $banner?->meta ?? [];
-$pageTitle = $banner?->title;
-$breadcrumbHomeText = $bannerMeta['breadcrumb_home_text'] ?? null;
-$breadcrumbCurrentText = $bannerMeta['breadcrumb_current_text'] ?? null;
-$cardButtonText = $bannerMeta['card_button_text'] ?? null;
+$pageTitle = $banner?->title ?? 'Servicios';
+$breadcrumbHomeText = $bannerMeta['breadcrumb_home_text'] ?? 'Inicio';
+$breadcrumbCurrentText = $bannerMeta['breadcrumb_current_text'] ?? 'Servicios';
+$cardButtonText = $bannerMeta['card_button_text'] ?? 'Ver todas';
 @endphp
 
 @section('content')

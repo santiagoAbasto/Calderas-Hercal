@@ -130,7 +130,13 @@ class CmsSectionBlueprint
                 'hide_section_order' => true,
                 'image_only_media' => true,
                 'fields' => [],
-                'meta_fields' => [],
+                'meta_fields' => [
+                    ['key' => 'breadcrumb_home_text', 'label' => 'Texto breadcrumb inicio', 'type' => 'text'],
+                    ['key' => 'breadcrumb_current_text', 'label' => 'Texto breadcrumb actual', 'type' => 'text'],
+                    ['key' => 'card_button_text', 'label' => 'Texto botón cards', 'type' => 'text'],
+                    ['key' => 'detail_button_text', 'label' => 'Texto botón detalle', 'type' => 'text'],
+                    ['key' => 'detail_button_url', 'label' => 'URL botón detalle', 'type' => 'text'],
+                ],
             ],
             [
                 'page_slug' => 'equipos',
@@ -145,7 +151,11 @@ class CmsSectionBlueprint
                 'hide_section_order' => true,
                 'image_only_media' => true,
                 'fields' => [],
-                'meta_fields' => [],
+                'meta_fields' => [
+                    ['key' => 'breadcrumb_home_text', 'label' => 'Texto breadcrumb inicio', 'type' => 'text'],
+                    ['key' => 'breadcrumb_current_text', 'label' => 'Texto breadcrumb actual', 'type' => 'text'],
+                    ['key' => 'card_button_text', 'label' => 'Texto botón cards', 'type' => 'text'],
+                ],
             ],
             [
                 'page_slug' => 'trabajos-realizados',

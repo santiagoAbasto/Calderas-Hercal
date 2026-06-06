@@ -4,10 +4,10 @@
 $banner = $page?->sections->where('section_key', 'equipos_banner')->first();
 $bannerMedia = $banner?->activeMedia->first();
 $bannerMeta = $banner?->meta ?? [];
-$pageTitle = $banner?->title;
-$breadcrumbHomeText = $bannerMeta['breadcrumb_home_text'] ?? null;
-$breadcrumbCurrentText = $bannerMeta['breadcrumb_current_text'] ?? null;
-$cardButtonText = $bannerMeta['card_button_text'] ?? null;
+$pageTitle = $banner?->title ?? 'Equipos';
+$breadcrumbHomeText = $bannerMeta['breadcrumb_home_text'] ?? 'Inicio';
+$breadcrumbCurrentText = $bannerMeta['breadcrumb_current_text'] ?? 'Equipos';
+$cardButtonText = $bannerMeta['card_button_text'] ?? 'Ver más';
 @endphp
 
 @section('content')

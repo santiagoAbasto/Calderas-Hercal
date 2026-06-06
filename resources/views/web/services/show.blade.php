@@ -3,7 +3,7 @@
 @php
 $banner = $page?->sections->where('section_key', 'servicios_banner')->first();
 $bannerMeta = $banner?->meta ?? [];
-$detailButtonText = $bannerMeta['detail_button_text'] ?? null;
+$detailButtonText = $bannerMeta['detail_button_text'] ?? 'Consultar';
 $detailButtonUrl = $bannerMeta['detail_button_url'] ?? null;
 @endphp
 
