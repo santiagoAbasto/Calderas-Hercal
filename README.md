@@ -15,19 +15,19 @@
 
 <img src="docs/readme/divider.svg" alt="" width="100%">
 
-## 📑 Contenido
+## <img src="docs/readme/ic-indice.svg" width="24" height="24" alt=""> Contenido
 
 [El problema](#-el-problema) · [La solución](#-la-solución) · [Funcionalidades](#-funcionalidades) · [Arquitectura](#-arquitectura) · [Flujos de trabajo](#-flujos-de-trabajo) · [Modelo de datos](#-modelo-de-datos) · [Criterios y decisiones](#-criterios-y-decisiones) · [Stack](#-stack) · [Estructura](#-estructura-del-repo) · [Puesta en marcha](#-puesta-en-marcha) · [Pruebas y calidad](#-pruebas-y-calidad) · [Despliegue](#-despliegue) · [Estado y pendientes](#-estado-y-pendientes) · [Licencia y autoría](#-licencia-y-autoría)
 
 <img src="docs/readme/divider.svg" alt="" width="100%">
 
-## 🧩 El problema
+## <img src="docs/readme/ic-problema.svg" width="24" height="24" alt=""> El problema
 
 Una empresa industrial que vende calderas y equipos necesitaba dos cosas que no convivían bien: un sitio que mostrara servicios, equipos y trabajos realizados a potenciales clientes, y una forma de recibir consultas comerciales sin depender de plantillas o de intervenir la base de datos para cada cambio de contenido.
 
 Sin una herramienta propia, cada actualización de un servicio, una ficha de equipo o una foto de obra dependía de quien pudiera tocar el código, y las solicitudes de contacto y presupuesto llegaban dispersas.
 
-## 💡 La solución
+## <img src="docs/readme/ic-solucion.svg" width="24" height="24" alt=""> La solución
 
 **Calderas Hercal** es una aplicación Laravel con dos caras:
 
@@ -38,7 +38,7 @@ El acceso al panel exige sesión autenticada y el permiso explícito `can_access
 
 <img src="docs/readme/divider.svg" alt="" width="100%">
 
-## ✨ Funcionalidades
+## <img src="docs/readme/ic-funcionalidades.svg" width="24" height="24" alt=""> Funcionalidades
 
 **Sitio público**
 - Inicio, empresa, servicios, equipos, trabajos realizados, clientes y búsqueda de servicios, equipos y proyectos.
@@ -55,7 +55,7 @@ El acceso al panel exige sesión autenticada y el permiso explícito `can_access
 
 <img src="docs/readme/divider.svg" alt="" width="100%">
 
-## 🏗️ Arquitectura
+## <img src="docs/readme/ic-arquitectura.svg" width="24" height="24" alt=""> Arquitectura
 
 Monolito Laravel que comparte modelos, reglas, almacenamiento y autenticación entre dos formas de presentación: Blade para la web pública y Inertia para el panel. No existe una API REST pública ni versionada; algunas rutas internas del CMS responden JSON.
 
@@ -77,7 +77,7 @@ flowchart LR
 
 <img src="docs/readme/divider.svg" alt="" width="100%">
 
-## 🔄 Flujos de trabajo
+## <img src="docs/readme/ic-flujos.svg" width="24" height="24" alt=""> Flujos de trabajo
 
 **Solicitud de presupuesto desde el sitio público**
 
@@ -115,7 +115,7 @@ sequenceDiagram
 
 <img src="docs/readme/divider.svg" alt="" width="100%">
 
-## 🗃️ Modelo de datos
+## <img src="docs/readme/ic-datos.svg" width="24" height="24" alt=""> Modelo de datos
 
 Persistencia con Eloquent. Las migraciones definen claves foráneas, borrado en cascada donde corresponde, slugs y correos únicos, e índices para orden, relaciones y estado de lectura.
 
@@ -153,7 +153,7 @@ Las solicitudes de contacto y presupuesto también quedan en `form_submissions`,
 
 <img src="docs/readme/divider.svg" alt="" width="100%">
 
-## 🧭 Criterios y decisiones
+## <img src="docs/readme/ic-criterios.svg" width="24" height="24" alt=""> Criterios y decisiones
 
 Reglas de negocio e invariantes que no se leen a simple vista en el código:
 
@@ -173,7 +173,7 @@ Reglas de negocio e invariantes que no se leen a simple vista en el código:
 
 <img src="docs/readme/divider.svg" alt="" width="100%">
 
-## 🧱 Stack
+## <img src="docs/readme/ic-stack.svg" width="24" height="24" alt=""> Stack
 
 | Capa | Tecnología | Versión |
 | --- | --- | --- |
@@ -190,7 +190,7 @@ Reglas de negocio e invariantes que no se leen a simple vista en el código:
 
 <img src="docs/readme/divider.svg" alt="" width="100%">
 
-## 🗂️ Estructura del repo
+## <img src="docs/readme/ic-estructura.svg" width="24" height="24" alt=""> Estructura del repo
 
 ```text
 app/Http/Controllers/Web/     sitio público (inicio, servicios, equipos, presupuesto)
@@ -207,7 +207,7 @@ tests/                        pruebas de funcionalidad y unitarias
 
 <img src="docs/readme/divider.svg" alt="" width="100%">
 
-## 🚀 Puesta en marcha
+## <img src="docs/readme/ic-arranque.svg" width="24" height="24" alt=""> Puesta en marcha
 
 Requisitos: PHP 8.3+, Composer, Node.js y npm.
 
@@ -228,7 +228,7 @@ Variables de entorno: revisar `.env.example` (base de datos, correo, `APP_URL`, 
 
 <img src="docs/readme/divider.svg" alt="" width="100%">
 
-## 🧪 Pruebas y calidad
+## <img src="docs/readme/ic-pruebas.svg" width="24" height="24" alt=""> Pruebas y calidad
 
 Pruebas en `tests/Feature` y `tests/Unit`: autenticación, perfil, autorización del panel, protección de formularios, cabeceras HTTP, rechazo de SVG, visibilidad del CMS, reglas del catálogo y selección contextual en presupuestos.
 
@@ -241,13 +241,13 @@ La cifra registrada en la versión anterior de este README fue de 41 pruebas y 1
 
 <img src="docs/readme/divider.svg" alt="" width="100%">
 
-## 🚢 Despliegue
+## <img src="docs/readme/ic-despliegue.svg" width="24" height="24" alt=""> Despliegue
 
 No documentado en el repositorio. No hay Dockerfile, Docker Compose, configuración de servidor web ni pipeline CI/CD versionados. El proveedor, entorno y procedimiento de producción no se pueden verificar desde el código.
 
 <img src="docs/readme/divider.svg" alt="" width="100%">
 
-## 📌 Estado y pendientes
+## <img src="docs/readme/ic-estado.svg" width="24" height="24" alt=""> Estado y pendientes
 
 - **Estado:** demo funcional. El código incluye sitio público, panel, persistencia, migraciones, seeders y pruebas automatizadas.
 - **Último commit:** 2026-06-06, `VERSION 1.0.1`, en el historial local.
@@ -256,7 +256,7 @@ No documentado en el repositorio. No hay Dockerfile, Docker Compose, configuraci
 
 <img src="docs/readme/divider.svg" alt="" width="100%">
 
-## 📄 Licencia y autoría
+## <img src="docs/readme/ic-licencia.svg" width="24" height="24" alt=""> Licencia y autoría
 
 Desarrollado por el **Ing. Santiago Abasto**.
 
